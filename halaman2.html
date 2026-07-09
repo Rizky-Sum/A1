@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Halaman 2</title>
+	</head>
+	<body>
+		<h2>Pendaftaran Seminar Online</h2>
+		<h3>Langkah 2 dari 3</h3>
+		
+		<form action="halaman3.html" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Informasi Seminar</legend>
+				
+				<div>
+					<label for="pilihan_seminar">Pilihan Seminar</label><br>
+					<select id="pilihan_seminar" name="pilihan_seminar"required>
+						<option value="" selected disabled>--Pilih Seminar--</option>
+						<option value="HTML_dasar">HTML dasar</option>
+						<option value="CSS_dasar">CSS_dasar</option>
+						<option value="Javascript">Javascript</option>
+						<option value="PHP_dasar">PHP dasar</option>
+						<option value="Laravel">Laravel</option>
+					</select><br><br>
+				</div>
+				<div>
+					<label for="tanggal_seminar">Tanggal Seminar</label><br>
+					<input type="date" id="tanggal_seminar" name="tanggal_seminar" required><br><br>
+				</div>
+				<div>
+					<label for="sesi">Sesi</label><br>
+					<input type="radio" id="pagi" name="sesi" value="pagi" required>
+					<label for="pagi">Pagi</label>
+					<input type="radio" id="siang" name="sesi" value="siang" required>
+					<label for="siang">Siang</label>
+					<input type="radio" id="malam" name="sesi" value="malam" required>
+					<label for="malam">Malam</label><br><br>
+				</div>
+				<div>
+					<label for="metode_kehadiran">Metode Kehadiran</label><br>
+					<input type="radio" id="online" name="metode_kehadiran" value="online" required>
+					<label for="online">Online</label>
+					<input type="radio" id="offline" name="metode_kehadiran" value="offline" required>
+					<label for="ofline">Offline</label><br><br>
+				</div>
+				<div>
+					<label for="bukti_pembayaran">Bukti Pembayaran</label><br>
+					<input type="file" id="bukti_pembayaran" name="bukti_pembayaran" accept =".jpg,jpeg,.png" required><br><br>
+				</div>
+				
+			</fieldset><br>
+			
+			<a href='halaman1.html'"> <button type="button"> << Sebelumnya </button></a>
+			<input type="submit" value="Selanjutnya >>">
+		</form>
+	</body>
+</html

@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Halaman 1 </title>
+	</head>
+	<body>
+		<h2>Pendaftaran Seminar Onlaine</h2>
+		<h3>Lankah 1 dari 3</h3>
+		
+		<form action="halaman2.html">
+			<fieldset>
+				<legend>Data Pribadi</legend>
+				<div>
+					<label for="name">Nama lenkap</label><br>
+					<input type="text" id="name" name="nama"required placeholder="Masukan Nama Lenkap" ><br><br>
+				</div>
+				<div>
+					<label for="email">Email</label><br>
+					<input type="email" id="email" name="email"required placeholder="Contoh@gemail.com" ><br><br>
+				</div>
+				<div>
+					<label for="No_HP">Nomer Hp</label><br>
+					<input type="tel" id="no_hp" name="no_hp"required placeholder="08XXXXXXXXX" ><br><br>
+				</div>	
+				<div>
+					<label for="tgl_lhr"> Tanggal Lahir </label><br>
+					<input type="date" id="tgl_lhr" name="tgl_lhr" required></label><br><br>
+				</div>
+				<div>
+					<label for="J_kelamin">Jenis Kelamin </label><br>
+					<input type="radio" id="laki" name="J_kelamin"required value="laki">
+					<label for="laki">Laki-Laki</label>
+					<input type="radio" id="perempuan" name="J_kelamin"required value="perempuan">
+					<label for="perempuan">perempuan</label><br><br>
+				</div>
+				<div>
+					<label for="alamat">Alamat</label><br>
+					<textarea id="alamat" name="alamat" rows="4" cols="50" required></textarea><br><br>
+				</div>
+				
+				<input type="submit" value="Selanjutnya>>">
+			</fieldset>
+		</form>
+	</body>
+</html
